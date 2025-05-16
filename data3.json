@@ -1,0 +1,10 @@
+{
+  "student": {
+    "name": "Gayatri",
+    "subjects": [
+      { "name": "HTML", "marks": 95 },
+      { "name": "CSS", "marks": 92 },
+      { "name": "JS", "marks": 98 }
+    ]
+  }
+}
