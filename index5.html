@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript DOM, Storage, Modules</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f3f3f3;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .box {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+    }
+    #output {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript DOM, Events, Storage & Modules</h1>
+
+  <!-- DOM Selection Area -->
+  <div class="box">
+    <h2>1. DOM Selection</h2>
+    <p id="byId">This paragraph is selected using <code>getElementById</code>.</p>
+    <p class="byClass">This is selected using <code>getElementsByClassName</code>.</p>
+    <p class="byClass">Another element with same class.</p>
+    <p data-role="query">This is selected using <code>querySelector</code> and <code>querySelectorAll</code>.</p>
+  </div>
+
+  <!-- Event Listeners Area -->
+  <div class="box">
+    <h2>2. Event Listeners</h2>
+    <button id="changeTextBtn">Change Text</button>
+    <button id="changeAttrBtn">Change Image Attribute</button>
+    <button id="addDynamicBtn">Add Dynamic Content</button>
+    <button id="writeBtn">Use document.write()</button>
+    <div id="eventOutput">Event output will appear here.</div>
+    <img id="sampleImg" src="https://via.placeholder.com/150" alt="Placeholder Image" />
+  </div>
+
+  <!-- DOM Manipulation -->
+  <div class="box">
+    <h2>3. DOM Manipulation</h2>
+    <button id="createElementBtn">Create Element</button>
+    <button id="removeElementBtn">Remove Element</button>
+    <button id="updateElementBtn">Update Element</button>
+    <div id="manipulateArea"></div>
+  </div>
+
+  <!-- Storage Section -->
+  <div class="box">
+    <h2>4. Web Storage (Local & Session)</h2>
+    <p><strong>Local Storage Clicks:</strong> <span id="localClicks">0</span></p>
+    <p><strong>Session Storage Clicks:</strong> <span id="sessionClicks">0</span></p>
+    <button id="localCounterBtn">Local Click</button>
+    <button id="sessionCounterBtn">Session Click</button>
+  </div>
+
+  <!-- JS Module Section -->
+  <div class="box">
+    <h2>5. ES6 Modules</h2>
+    <input type="number" id="valA" placeholder="Enter value A" />
+    <input type="number" id="valB" placeholder="Enter value B" />
+    <br /><br />
+    <button id="addBtn">Add</button>
+    <button id="multBtn">Multiply</button>
+    <button id="subBtn">Subtract</button>
+    <div id="moduleResult"></div>
+  </div>
+
+  <!-- Script Files -->
+  <script type="module" src="script5.js"></script>
+
+</body>
+</html>
